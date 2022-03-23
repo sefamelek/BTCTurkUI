@@ -1,0 +1,22 @@
+<suite name="All Test Suite" parallel="classes" thread-count="4">
+
+    <test verbose="2" preserve-order="true" name="ApiTest">
+
+    <classes>
+        <class name="pro.btcturk.CucumberRunner"></class>
+    </classes>
+
+    </test>
+      <test name="FirefoxTest">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="pro.btcturk.Drivers" />
+        </classes>
+    </test>
+    <test name="ChromeTest">
+        <parameter name="browser" value= "chrome" />
+        <classes>
+            <class name="pro.btcturk.Drivers" />
+        </classes>
+    </test>
+</suite>
